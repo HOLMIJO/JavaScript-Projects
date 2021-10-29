@@ -33,3 +33,18 @@ document.write(X === Y);
 A = "Joseph";
 B = "Joseph";
 document.write(A === B);
+
+document.write(10 > 25 && 12 > 6);
+
+document.write(7 > 10 || 10 > 5);
+
+document.write(15 > 20 || 12 > 25);
+
+function not_Function() {
+    document.getElementById("Not").innerHTML = !(30 > 20);
+
+}
+
+function not_Funtion() {
+    document.getElementById("Not2").innerHTML = !(10 > 10);
+}
