@@ -45,3 +45,7 @@ function decrease() { //Defined function with name
     X--; //Decremental designator of variable
     document.getElementById("Math9").innerHTML = X; //To display result of operation
 }
+
+window.alert(Math.random() * 100);
+
+window.alert(Math.round(4.7));
