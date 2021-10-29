@@ -46,6 +46,6 @@ function decrease() { //Defined function with name
     document.getElementById("Math9").innerHTML = X; //To display result of operation
 }
 
-window.alert(Math.random() * 100);
+window.alert(Math.random() * 100); //Alert renders random number between 0 and 100
 
-window.alert(Math.round(4.7));
+window.alert(Math.round(4.7)); //Alert renders result rounded to next whole number.
