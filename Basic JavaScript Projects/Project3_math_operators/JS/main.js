@@ -37,11 +37,11 @@ function neg_Operator() { //Defined function with name
 function increase() { //Defined function with name
     var X = 25; //Defined variable with equation
     X++; // Incremental designator of variable
-    document.write(X); //To display result of operation
+    document.getElementById("Math8").innerHTML = X; //To display result of operation
 }
 
 function decrease() { //Defined function with name
     var X = 7.75 //Defined variable with equation
     X--; //Decremental designator of variable
-    document.write(X); //To display result of operation
+    document.getElementById("Math9").innerHTML = X; //To display result of operation
 }
