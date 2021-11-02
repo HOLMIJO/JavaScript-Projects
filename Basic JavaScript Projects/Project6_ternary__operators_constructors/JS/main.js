@@ -73,6 +73,6 @@ function Nested() { //Defined function gave name
         Plus_one();
         return Starting_point;
     }
-    document.getElementById("Nested_Function").innerHTML = Plus_one();
+    document.getElementById("Nested_Function").innerHTML = Plus_one(); //Displays result in HTML
 }
 
