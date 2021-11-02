@@ -53,13 +53,13 @@ function Time_function() {
     var Time = new Date().getHours();
     var Reply;
     if (Time < 12 == Time > 0) {
-        Reply = "It's morning time!";
+        Reply = "It\'s morning time!";
     }
     else if (Time >= 12 == Time < 18) {
-        Reply = "It's the afternoon.";
+        Reply = "It\'s the afternoon.";
     }
     else {
-        Reply = "It's evening time.";
+        Reply = "It\'s evening time.";
     }
     document.getElementById("Time_of_day").innerHTML = Reply;
 }
