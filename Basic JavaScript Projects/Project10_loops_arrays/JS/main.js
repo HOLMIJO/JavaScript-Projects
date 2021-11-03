@@ -84,10 +84,14 @@ document.getElementById("Hello").innerHTML = HelloWorld("Joseph");
 //Displays concatenated result to "Hello" ID in HTML
 
 function CarWars() {
-    let myCar = (
-        make: "Dodge "; model: "Journey "; year: "2009 "; color: "gold "; description: CarWars() {
+    let TheCar = {
+        make: "Dodge ",
+        model: "Journey ",
+        year: "2009 ",
+        color: "gold ",
+        description: function() {
             return "My car is a " + this.year + this.color + this.make + this.model;
         }
-    );
+    }
+    document.getElementById("MyCar").innerHTML = TheCar.description();
 }
-document.getElementById("MyCar").innerHTML = myCar.description();
