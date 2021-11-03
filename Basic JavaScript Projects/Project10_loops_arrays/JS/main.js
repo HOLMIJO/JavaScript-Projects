@@ -85,7 +85,7 @@ document.getElementById("Hello").innerHTML = HelloWorld("Joseph");
 
 function CarWars() {
     let myCar = (
-        make: "Dodge "; model: "Journey "; year: "2009 "; color: "gold "; description: function() {
+        make: "Dodge "; model: "Journey "; year: "2009 "; color: "gold "; description: CarWars() {
             return "My car is a " + this.year + this.color + this.make + this.model;
         }
     );
