@@ -58,3 +58,36 @@ function array_Function() { //Defined function and gave name
     document.getElementById("Array").innerHTML = Dog_Breed[1] + " is my favorite dog breed!";
     //Displays result with concatenated string in HTML
 }
+
+const cars = ["Saab", "Volvo", "BMW"]; //Defined constant with strings in array
+function constant_function() { //Defined function with name
+    document.getElementById("Constant").innerHTML = cars[1] + " is a car I want to own.";
+    //Displays concatenated result to "Constant" ID in HTML
+}
+cars.push("Jeep"); //Pushes string to cars array at last position
+document.getElementById("Constant").innerHTML = cars[3] + " is my new favorite!";
+//Displays concatenated result to "Constant ID in HTML
+
+var B = "old enough."; //Defined variable with a string
+
+function Old_Enough() { //Defined function and gave name
+    let B = "NOT old enough."; //Let statement with string
+    document.getElementById("OldEnough").innerHTML = "I am " + B;
+    //Displays concatenated result in "OldEnough" ID in HTML
+
+}
+
+function HelloWorld(name) { //Defined function and gave name
+    return "Hello " + name; //Gave return with string
+}
+document.getElementById("Hello").innerHTML = HelloWorld("Joseph");
+//Displays concatenated result to "Hello" ID in HTML
+
+function CarWars() {
+    let myCar = (
+        make: "Dodge "; model: "Journey "; year: "2009 "; color: "gold "; description: function() {
+            return "My car is a " + this.year + this.color + this.make + this.model;
+        }
+    );
+}
+document.getElementById("MyCar").innerHTML = myCar.description();
