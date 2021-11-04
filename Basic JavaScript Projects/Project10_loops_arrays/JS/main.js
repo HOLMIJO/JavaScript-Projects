@@ -83,8 +83,8 @@ function HelloWorld(name) { //Defined function and gave name
 document.getElementById("Hello").innerHTML = HelloWorld("Joseph");
 //Displays concatenated result to "Hello" ID in HTML
 
-function CarWars() {
-    let TheCar = {
+function CarWars() { //Defined function and gave name
+    let TheCar = { //Let statement defineing strings
         make: "Dodge ",
         model: "Journey ",
         year: "2009 ",
@@ -94,4 +94,63 @@ function CarWars() {
         }
     }
     document.getElementById("MyCar").innerHTML = TheCar.description();
+    //Displays concatenated result within "MyCar" ID in HTML
+}
+
+function break_Statement() { //Defined function and gave name
+    var text = ""; //Defined variable with string
+    var C; //Defined variable
+    for (C = 0; C < 7; C++) {
+        if (C === 4) {
+            break;
+        }
+        text += "The number is " + C + "<br>";
+    }
+    document.getElementById("Breaking").innerHTML = text;
+    //Displays result in "Breaking" ID in HTML
+}
+
+function BreakingBad() { //Defined function and gave name
+    const numbers = ["One", "Two", "Three", "Four"]; //Defined constant with array of strings
+    let text = ""; //Defined let statement with string
+
+    list: { //List as array and strings
+        text += numbers[0] + "<br>";
+        text += numbers[1] + "<br>";
+        break list;
+        text += numbers[2] + "<br>";
+        text += numbers[3] + "<br>";
+    }
+    document.getElementById("Broke").innerHTML = text;
+    //Displays result in "Broke" in HTML
+}
+
+function Arrow() { //Define function and gave name
+    var text = ""; //Define variable with string
+    var D; //Define variable
+    for (D = 0; D < 10; D++) {
+        if (D === 7) {
+            continue;
+        }
+        text += "The number is " + D + "<br>";
+    }
+    document.getElementById("Bow").innerHTML = text;
+    //Display result in "Bow" in HTML
+}
+
+
+function Glass() { //Define function and gave name
+    var i = 0; //Defined variable with number
+    for (i = 0; i < 10; i++) {
+        if (i === 5 || i === 3) {
+            continue;
+        }
+        document.write(i); //Displays in HTML
+
+        if (i === 9) {
+            break;
+        }
+        document.write(i); //Displays in HTML
+    }
+
 }
