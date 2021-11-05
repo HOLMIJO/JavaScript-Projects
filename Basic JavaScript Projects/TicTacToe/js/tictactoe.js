@@ -36,7 +36,7 @@ function placeXOrO(squareNumber) {
 
 
         //This function plays placement sound.
-        Audio('./media/place.mp3');
+        audio('./media/place.mp3');
         //This condition checks to see if it is computers turn.
         if(activePlayer === 'O'){
             //This function disables clicking for computer choice.
@@ -122,4 +122,21 @@ function checkWinConditions() {
         //returned and our else if condition executes the drawWinLine function.
         if (a === true && b === true && c === true) { return true }
     }
+}
+
+//This function makes our body element temporarily unavailable.
+function disableClick() {
+    //This makes our body unclickable.
+    body.style.pointerEvents = 'none';
+    //This makes our body clickable again after 1 second.
+    setTimeout(function() {body.style.pointerEvents = 'auto;'}, 1000);
+}
+
+//This function takes a string parameter of the path you set earlier for
+//placement sound ('./media/place.mp3')
+function audio(audioURL) {
+    //We create a new audio object and we pass the path as a parameter.
+    let audio = new Audio(audioURL);
+    //Play method plays our audio sound.
+    audio.play();
 }
