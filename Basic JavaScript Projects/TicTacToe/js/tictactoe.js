@@ -217,4 +217,3 @@ audio('./media/winGame.mp3');
 animateLineDrawing();
 //This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.
 setTimeout(function () { clear(); resetGame(); }, 1000);
-}
