@@ -131,7 +131,7 @@ function disableClick() {
     //This makes our body unclickable.
     body.style.pointerEvents = 'none';
     //This makes our body clickable again after 1 second.
-    setTimeout(function() {body.style.pointerEvents = 'auto;'}, 1000);
+    setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);
 }
 
 //This function takes a string parameter of the path you set earlier for
@@ -150,7 +150,7 @@ function audio(audioURL) {
         //This line gives us access to methods and properties to use on canvas.
         const c = canvas.getContext('2d');
         //This line indicates where the start of a lines x axis is.
-        let xl = coordX1,
+        let x1 = coordX1,
             //This line indicates where the start of a lines y axis is.
             y1 = coordY1,
             //This line indicates where the end of a lines x axis is.
@@ -217,4 +217,17 @@ function audio(audioURL) {
     animateLineDrawing();
     //This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.
     setTimeout(function () { clear(); resetGame(); }, 1000);
+    }
+   //This function resets the game in the event of a tie or a win.
+   function resetGame() {
+    //This for loop iterates through each HTML square element
+    for (let i = 0; i < 9; i++) {
+        //This variable gets HTML element of i.
+        let square = document.getElementById(String(i))
+        //This removes our elements backgroundImage.
+        square.style.backgroundImage = ''
+    }
+    //This resets our array so it is empty and we can start over.
+    selectedSquares = [];
+
 }
