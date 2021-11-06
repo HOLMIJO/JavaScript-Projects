@@ -161,10 +161,10 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
         x = x1;
         //This variable stores temporary y axis data we update in our animation loop.
         y = y1;
-}
 
-//This function interacts with the canvas
-function animateLineDrawing() {
+
+    //This function interacts with the canvas
+    function animateLineDrawing() {
     //This variable creates a loop.
     const animationLoop = requestAnimationFrame(animateLineDrawing);
     //This method clears content from last loop iteration.
@@ -200,20 +200,21 @@ function animateLineDrawing() {
     }
 }
 
-//This function clears our canvas after our win line is drawn.
-function clear() {
+    //This function clears our canvas after our win line is drawn.
+    function clear() {
     //This line starts our animation loop.
     const animationLoop = requestAnimationFrame(clear);
     //This line clears our canvas.
     c.clearRect(0, 0, 608, 608);
     //This line stops our animation loop.
     cancelAnimationFrame(animationLoop);
+    }
+    //This line disallows clicking while the win sound is playing.
+    disableClick();
+    //This line plays the win sounds.
+    audio('./media/winGame.mp3');
+    //This line calls our main animation loop.
+    animateLineDrawing();
+    //This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.
+    setTimeout(function () { clear(); resetGame(); }, 1000);
 }
-//This line disallows clicking while the win sound is playing.
-disableClick();
-//This line plays the win sounds.
-audio('./media/winGame.mp3');
-//This line calls our main animation loop.
-animateLineDrawing();
-//This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.
-setTimeout(function () { clear(); resetGame(); }, 1000);
