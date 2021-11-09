@@ -7,6 +7,7 @@
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 </head>
 <body>
+    <div id="like_button_container"></div>
     <script>
         const X = React.createElement;
 
@@ -22,7 +23,7 @@
                 }
 
                 return X(
-                    'button'
+                    'button',
                     { onClick: () => this.setState({ liked: true }) },
                     'Like'
                 );
@@ -30,7 +31,7 @@
         }
 
         const domContainer = document.querySelector('#like_button_container');
-        React.DOM.render(X(likeButton), domContainer);
+        ReactDOM.render(X(likeButton), domContainer);
     </script>
 </body>
 </html>
