@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var Music_Parser, Music_Document; //Defined variables
+
+            //Creates a text string
+            //Defined variable of concatenated string
+            var Music = "<music>" +
+            "<title>Working Class Dog</title>" +
+            "<label>RCA Records</label>" +
+            "<artist>Rick Springfield</artist>" +
+            "<year>1981</year>" +
+            "</music>";
+
+            //creates an XML DOM parser
+            Music_Parser = new DOMParser();
+
+            //creates a new XML DOM object using the text string
+            Music_Document = Music_Parser.parseFromString(Music, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML =
+            Music_Document.getElementsByTagName("artist") [0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
