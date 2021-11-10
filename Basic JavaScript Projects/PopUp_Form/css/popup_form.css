@@ -71,14 +71,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
     opacity:1;
 }
 
-/* Keyframes Div */
+/* Keyframes Div 
 div {
-    width:150px;
+    width:500px;
     height:150px;
     background:red;
     position:relative;
     z-index: 1;
-}
+} */
 
 #animate {
     animation: mymove 5s infinite;
@@ -134,4 +134,21 @@ html {
     background:red;
     position:relative;
     z-index: 1;
+}
+
+.boxes {
+    width:150px;
+    height:150px;
+    background:red;
+    position:relative;
+    z-index: 1;
+}
+
+div.sticky {
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+    background-color:yellow;
+    padding:50px;
+    font-size:20px;
 }

@@ -4,8 +4,8 @@
 <head>
     <title>Pop=Up Form Assignment</title>
     <meta name="viewport" content="width=device-width, inital-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="js/popup_form.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" defer></script>
+    <script src="js/popup_form.js" defer></script>
     <link rel="stylesheet" href="css/popup_form.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
     <h3>Click the button at the bottom of the page to open the login form.</h3>
     <div class="boxes" id="animate"><p>Fill out the form down below.</p></div>
     <img src="img/pic_trulli.jpg" alt="Trulli" width="750" height="500"><br><br>
+    <div class="sticky">This will stick to the screen while you scroll.</div>
     <br><br><h3>Paragraphs with links...</h3>
     <a href="#Paragraph1">Click here for Paragraph 1</a>
     <a href="#Paragraph2">Click here for Paragraph 2</a>
@@ -39,7 +40,6 @@
         </div>
     </div><br><br>
     <br><br><button class="open-button" onClick="openForm()">Open Form</button>
-
     <div class="form-popup" id="myForm">
         <form action="" class=form-container">
         <h1>Login</h1><h1>
