@@ -143,7 +143,7 @@ html {
     position:relative;
     z-index: 1;
 }
-
+/* Sticky banner */
 div.sticky {
     position:-webkit-sticky;
     position:sticky;
@@ -152,3 +152,4 @@ div.sticky {
     padding:50px;
     font-size:20px;
 }
+
