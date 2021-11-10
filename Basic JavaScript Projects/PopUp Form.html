@@ -76,11 +76,26 @@
             opacity:1;
         }
 
+        /* Keyframes Div */
+        div {
+            width:100px;
+            height:100px;
+            background:red;
+            position:relative;
+            animation: mymove 5s infinite;
+        }
+
+        @keyframes mymove {
+            from {top:0px;}
+            to {top:200px;}
+        }
+
     </style>
 </head>
 <body>
-    <h2>Popup Form</h2>
-    <p>Click the button at the bottom of the page to open the login form.</p>
+    <h1>Popup Form</h1>
+    <h3>Click the button at the bottom of the page to open the login form.</h3>
+    <div><p>Fill out the form down below.</p></div>
     <button class="open-button" onClick="openForm()">Open Form</button>
 
     <div class="form-popup" id="myForm">
