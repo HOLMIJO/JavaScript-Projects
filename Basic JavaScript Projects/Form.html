@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<meta lang="en">
+<head>
+    <title>Form Assignment</title>
+    <script>
+        function validateForm() {
+            let X = document.forms["myForm"]["email"].value;
+            if (X == "") {
+                alert("Field must be filled out.");
+                return false;
+            }
+        }
+    </script>
+</head>
+<html>
+<body>
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your First name.."><br>
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your Last name.."><br>
+    <label for="lname">Phone Number: </label>
+    <input type="tel" id="phone" name="phone" placeholder="870-555-1212" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+    <label for="phone">Enter your phone number:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your Email Address..">
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
