@@ -26,6 +26,14 @@ function add() {
 
     return false;
 }
+/*This function removes an element from the array*/
+function removeFromArray(array, value) {
+    var idx = array.indexOf(value);
+    if (idx !== -1) {
+        array.splice(idx, 1);
+    }
+    return array;
+}
 
 /*this function keeps the tasks permanently displayed on the screen*/
 function show() {
@@ -42,9 +50,27 @@ function show() {
     html += '</ul>';
     /*This displays the task as a list*/
     document.getElementById('todos').innerHTML = html;
+    /*This tells the browser how to display the todo
+    array after an item has been removed*/
+    var buttons = document.getElementsByClassName('remove');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[1].addEventListener('click', remove);
+    }
 }
 /*This displays the inputed task when the 'Add Item' button is clicked*/
 document.getElementById('add').addEventListener('click', add);
 /*this will keep the inputs displayed permanently on the screen*/
 show();
+
+/*This creates functionality of removing a todo item from the array */
+function remove() {
+    var id = this.getAttribute('id');
+    var todos = get_todos();
+    todos.splice(id, 1);
+    localStorage.setItem('todo', JSON.stringify(todos));
+    /*this looks in the show() how to display a removed item on the screen */
+    show();
+
+    return false;
+}
 

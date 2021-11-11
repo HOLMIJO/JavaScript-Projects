@@ -45,3 +45,7 @@ li {
     color:white;
     text-align:center;
 }
+/*Adds padding between array items after one is deleted*/
+.remove {
+    padding-bottom:5px;
+}
