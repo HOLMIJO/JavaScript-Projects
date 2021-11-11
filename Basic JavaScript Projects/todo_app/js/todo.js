@@ -14,7 +14,7 @@ function get_todos() {
 /*This function adds the inputed task to the get_todos function array*/
 function add() {
     /*This takes the inputed task and creates a variable of it*/
-    var task = document.getElementById('task').ariaValueMax;
+    var task = document.getElementById('task').value;
 
     var todos = get_todos();
     /*This adds a new task to the end of the array*/
