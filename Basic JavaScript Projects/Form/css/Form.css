@@ -1,37 +1,60 @@
-div.sticky {
-    position:-webkit-sticky;
-    position:sticky;
-    top:0;
-    right:0;
-    background-color: greenyellow;
-    padding:50px;
-    font-size:20px;
+* {
+    margin:0;
+    padding:0;
+    /* It prevents the user from selecting the content on site. */
+    user-select:none;
 }
 
-.button {
-    background-color:greenyellow;
-    border:none;
-    color:white;
-    padding:16px 32px;
+/* set the width and height of container */
+.container {
+    width:100%;
+    height:700px;
+    padding:50px 0;
+}
+
+/* set the width of content and set 
+margin to 0 auto to place content in the center of the browser */
+.content {
+    width:600px;
+    margin:0 auto;
+}
+
+.content p {
+    padding-bottom: 15px;
+}
+
+/* style the fixed button, by setting its position value to fixed,
+here the button is placed at the bottom of the browser by 
+considering the browser its parent element, and fixed button as child element. */
+.fixed-btn {
+    position:fixed;
+    background:greenyellow;
+    width:180px;
+    height:45px;
+    line-height:45px;
+    bottom:10%;
+    right:3%;
+    border-radius:3px;
     text-align:center;
-    text-decoration:none;
-    display:inline-block;
-    font-size:16px;
-    margin:4px 2px;
-    transition-duration: 0.4s;
+    box-shadow:4px 4px 4px black;
     cursor:pointer;
+
 }
 
-.button1 {
-    background-color:white;
-    color:black;
-    border:2px solid greenyellow;
+/* style text inside button */
+.fixed-btn p{
+    text-transform:uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:900px;
+    color:#fff;
+
 }
 
-.button1:hover {
-    background-color:greenyellow;
-    color:white;
+/* button click effect */
+.fixed-btn:active {
+    box-shadow:0 0;
 }
+
 
 {box-sizing:border-box;}
 
