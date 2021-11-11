@@ -54,7 +54,7 @@ function show() {
     array after an item has been removed*/
     var buttons = document.getElementsByClassName('remove');
     for (var i = 0; i < buttons.length; i++) {
-        buttons[1].addEventListener('click', remove);
+        buttons[i].addEventListener('click', remove);
     }
 }
 /*This displays the inputed task when the 'Add Item' button is clicked*/
