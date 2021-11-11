@@ -1,3 +1,9 @@
+
+// This removes the "fade-out" class once the page is loaded.
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});
+
 //This variable keeps track of whose turn it is.
 let activePlayer = 'X';
 //This array stores an array of moves, We use this to determine win conditions.
@@ -231,3 +237,7 @@ function audio(audioURL) {
     selectedSquares = [];
 
 }
+// This removes the "fade-out" class once the page is loaded.
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});
