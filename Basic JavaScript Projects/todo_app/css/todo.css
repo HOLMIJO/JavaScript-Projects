@@ -1,0 +1,47 @@
+html {
+    font-family:"Avenir Next", Helvetica, sans-serif;
+    text-align:center;
+}
+
+body {
+    max-width:500px;
+    margin:0 auto;
+}
+
+h1 {
+    text-align:center;
+}
+
+input {
+    padding-top:30px;
+    width:500px;
+    height:60px;
+    text-align:center;
+    font-size:40px;
+    border:0;
+    display:block;
+    margin:auto;
+}
+
+input:focus {
+    outline:none;
+}
+
+li {
+    text-align:left;
+    font-size:40px;
+    list-style:none;
+    margin:0;
+}
+/* Footer sticks to bottom of the page */
+.footer {
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:grey;
+    font-family:Tahoma, Arial;
+    font-size:0.7em;
+    color:white;
+    text-align:center;
+}
