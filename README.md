@@ -11,7 +11,7 @@ This is a display of sample projects that I made using JavaScript.
 </ul>  
 
 <b>Pizza Menu</b>
-This project is a menu used to order pizza with a various selection of toppings.
+This project is a menu used to order pizza with a various selection of toppings. 
 It then takes the input information and calculates a price for the order.
 
 <b>Tic-Tac-Toe Game</b>
